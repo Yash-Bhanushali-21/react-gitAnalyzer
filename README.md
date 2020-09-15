@@ -114,3 +114,9 @@ package.json
 ```
 
 [create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
+
+## Contributors
+
+### Code Contributors
+<a href="https://github.com/yash11213018"><img src="https://github.com/dhyey-shah/react-website-builder/blob/master/contributors/dev1.png" width="100px" height="100px" />
+</a>
