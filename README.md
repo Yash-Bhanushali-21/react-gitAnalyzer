@@ -118,10 +118,10 @@ package.json
 ## Contributors
 ### Special Thanks and credit-citation for such an awesome boiler-plate
 <h3>John Smilga</h3>
-<a href="https://github.com/john-smilga/"><img src="https://github.com/yash11213018/react-gitAnalyzer/image (1).png" width="100px" height="100px" />
+<a href="https://github.com/john-smilga/"><img src="https://github.com/yash11213018/react-gitAnalyzer/avatar.png" width="100px" height="100px" />
 </a>
 
-### Code Author
+## Code Author
 <h3>Yash Bhanushali</h3>
 <a href="https://github.com/yash11213018"><img src="https://github.com/dhyey-shah/react-website-builder/blob/master/contributors/dev1.png" width="100px" height="100px" />
 </a>
