@@ -118,7 +118,7 @@ package.json
 ## Contributors
 ### Special Thanks and credit-citation for such an awesome boiler-plate
 <h3>John Smilga</h3>
-<a href="https://github.com/john-smilga/"><img src="https://avatars0.githubusercontent.com/u/42133389?s=400&u=9d63b6d71fba139347cddf2c840a858c8ff97168&v=4" width="100px" height="100px" />
+<a href="https://github.com/john-smilga/"><img src="https://github.com/yash11213018/react-gitAnalyzer/image(1).png" width="100px" height="100px" />
 </a>
 
 ### Code Author
