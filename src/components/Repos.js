@@ -7,26 +7,32 @@ const Repos = () => {
   fetch repos data from the context.
   */
   const { repos } = React.useContext(GithubContext);
-  // console.log(repos);
-  // STEP 2 - Chart Data
-  const chartData = [
-    {
-      label: "Javascript",
-      value: "290"
-    },
-    {
-      label: "Python",
-      value: "260"
-    },
-    {
-      label: "Canada",
-      value: "180"
+  /*using hashmap concept, we return count of each lagnauge
+  dynamically using es6 reduce() */
+  let languages = repos.reduce((arr, item) => {
+    let { language } = item;
+    if (!language) return arr;
+    if (!arr[language]) {
+      arr[language] = { label: language, value: 1 };
+    } else {
+      arr[language] = {
+        ...arr[language],
+        value: arr[language].value + 1
+      };
     }
-  ];
+    return arr;
+  }, {});
+  /*since we just want the values now,
+  as values are the objects, we extract them */
+  languages = Object.values(languages);
+
   return (
     <section className="section">
       <Wrapper className="section-center">
-        <ExampleChart data={chartData} />
+        {/* testing chart.
+       <ExampleChart data={chartData} />
+       */}
+        <Pie3D data={languages} />
       </Wrapper>
     </section>
   );
