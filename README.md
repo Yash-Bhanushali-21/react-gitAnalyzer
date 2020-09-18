@@ -1,5 +1,7 @@
-## Starter Project
+## React-Git-Analyzer
+  A Simple- React-Application designed to analyze various aspects and features of a github profile using github API along with Styled Components , React Icons & Router DOM.
 
+## RoadMap
 - css provided (global styles, styled components)
 - folders/files already setup
 - all imports included (warnings)
@@ -114,6 +116,13 @@ package.json
 ```
 
 [create-react-app Warning Fix Blog Post](https://community.netlify.com/t/how-to-fix-build-failures-with-create-react-app-in-production/17752)
+
+## Screens
+### Screen1
+ -![image](https://github.com/yash11213018/react-gitAnalyzer/blob/master/git-Screens/screen2.JPG)
+### Screen2
+ -![image](https://github.com/yash11213018/react-gitAnalyzer/blob/master/git-Screens/screen3.JPG)
+ 
 
 ## Contributors
 ### Special Thanks and credit-citation for such an awesome boiler-plate
