@@ -47,8 +47,25 @@ const Repos = () => {
       return { ...item, value: item.stars };
     })
     .slice(0, 5);
-  console.log(mostPopular);
-  //
+  //console.log(mostPopular);
+  // going for stars,forks
+  let { stars, forks } = repos.reduce(
+    (total, item) => {
+      const { stargazers_count, name, forks } = item;
+      total.stars[stargazers_count] = { label: name, value: stargazers_count };
+      total.forks[forks] = { label: name, value: forks };
+      return total;
+    },
+    {
+      stars: {},
+      forks: {}
+    }
+  );
+  console.log(forks);
+  //displaying the 5 stars with greatest values. i.e. of courrse from end.
+  //but in sorted fashion, desc. so reverse.
+  stars = Object.values(stars).splice(-5).reverse();
+  forks = Object.values(forks).splice(-5).reverse();
 
   return (
     <section className="section">
@@ -57,9 +74,9 @@ const Repos = () => {
        <ExampleChart data={chartData} />
        */}
         <Pie2D data={mostUsed} />
-        <Column2D data={mostUsed} />
+        <Column2D data={stars} />
         <Doughnut2D data={mostPopular} />
-        <Bar2D data={mostUsed} />
+        <Bar2D data={forks} />
       </Wrapper>
     </section>
   );
