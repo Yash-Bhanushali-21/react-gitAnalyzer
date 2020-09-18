@@ -6,6 +6,14 @@ function App() {
   return (
     <div>
       <Router>
+        {/* 
+              The <Switch /> component will 
+              only render the first route that matches/includes the path.
+               Once it finds the first route that matches the path, 
+               it will not look for any other matches. Not only that,
+                it allows for nested routes to work properly, which is
+                 something that <Router /> will not be able to handle.*/}
+
         <Switch>
           {/*
         path:the url.

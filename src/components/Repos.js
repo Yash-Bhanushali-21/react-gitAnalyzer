@@ -8,23 +8,47 @@ const Repos = () => {
   */
   const { repos } = React.useContext(GithubContext);
   /*using hashmap concept, we return count of each lagnauge
-  dynamically using es6 reduce() */
+  dynamically using es6 reduce()
+  arr acts as an accumulator and its starting val is an 
+  empty obj.
+  https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+   */
   let languages = repos.reduce((arr, item) => {
-    let { language } = item;
+    let { language, stargazers_count } = item;
     if (!language) return arr;
     if (!arr[language]) {
-      arr[language] = { label: language, value: 1 };
+      arr[language] = { label: language, value: 1, stars: stargazers_count };
     } else {
       arr[language] = {
         ...arr[language],
-        value: arr[language].value + 1
+        value: arr[language].value + 1,
+        stars: arr[language].stars + stargazers_count
       };
     }
     return arr;
   }, {});
   /*since we just want the values now,
   as values are the objects, we extract them */
-  languages = Object.values(languages);
+  const mostUsed = Object.values(languages)
+    .sort((a, b) => {
+      return b.value - a.value;
+    })
+    .slice(0, 5);
+  //Most stars per langugage
+
+  //here we sort based on strs.
+  //then, we know that chart looks for value prop.
+  // so over-ride it with our starts prop.
+  const mostPopular = Object.values(languages)
+    .sort((a, b) => {
+      return b.stars - a.stars;
+    })
+    .map((item) => {
+      return { ...item, value: item.stars };
+    })
+    .slice(0, 5);
+  console.log(mostPopular);
+  //
 
   return (
     <section className="section">
@@ -32,7 +56,9 @@ const Repos = () => {
         {/* testing chart.
        <ExampleChart data={chartData} />
        */}
-        <Pie3D data={languages} />
+        <Pie3D data={mostUsed} />
+        <div> </div>
+        <Doughnut2D data={mostPopular} />
       </Wrapper>
     </section>
   );
