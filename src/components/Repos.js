@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GithubContext } from "../context/context";
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
+import { ExampleChart, Pie2D, Column2D, Bar2D, Doughnut2D } from "./Charts";
 const Repos = () => {
   /*
   fetch repos data from the context.
@@ -56,9 +56,10 @@ const Repos = () => {
         {/* testing chart.
        <ExampleChart data={chartData} />
        */}
-        <Pie3D data={mostUsed} />
-        <div> </div>
+        <Pie2D data={mostUsed} />
+        <Column2D data={mostUsed} />
         <Doughnut2D data={mostPopular} />
+        <Bar2D data={mostUsed} />
       </Wrapper>
     </section>
   );
