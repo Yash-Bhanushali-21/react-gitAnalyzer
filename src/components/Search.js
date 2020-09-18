@@ -5,7 +5,8 @@ import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = useState("");
   const handleSearch = (e) => {
-    setUser("test");
+    e.preventDefault();
+    console.log(user);
   };
 
   return (
@@ -14,7 +15,12 @@ const Search = () => {
         <form onSubmit={handleSearch}>
           <div className="form-control">
             <MdSearch />
-            <input type="text" placeholder="search user"></input>
+            <input
+              type="text"
+              placeholder="search user"
+              value={user}
+              onChange={(e) => setUser(e.target.value)}
+            ></input>
             <button type="submit">Search</button>
           </div>
         </form>
@@ -56,12 +62,11 @@ const Wrapper = styled.div`
       letter-spacing: var(--spacing);
     }
     button {
-      border-radius: 5px;
       border-color: transparent;
       padding: 0.25rem 0.5rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
-      background: var(--clr-primary-5);
+      background: var(--clr-primary-4);
       color: var(--clr-white);
       transition: var(--transition);
       cursor: pointer;
