@@ -24,7 +24,7 @@ const Card = () => {
           {/*
           making sure if no twitter username,throw name.
           */}
-          <p>@{twitter_username || { name }}</p>
+          <p>@{twitter_username || name }</p>
         </div>
         <a href={html_url}>Follow</a>
       </header>
