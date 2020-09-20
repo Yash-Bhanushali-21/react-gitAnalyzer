@@ -3,28 +3,29 @@ import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
-  return <Wrapper>navbar component</Wrapper>;
+  return (
+    <Wrapper>
+      <h4>Git User Inspector</h4>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.nav`
   padding: 1.5rem;
   margin-bottom: 4rem;
   background: var(--clr-white);
+  width: 100%;
   text-align: center;
   display: grid;
-  grid-template-columns: auto auto 100px;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   h4 {
     margin-bottom: 0;
-    font-weight: 400;
-  }
-  img {
-    width: 35px !important;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid blue;
+    padding: 5px;
   }
   button {
     background: transparent;
