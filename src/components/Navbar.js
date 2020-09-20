@@ -25,7 +25,7 @@ const Wrapper = styled.nav`
     font-weight: bold;
     text-align: center;
     border: 1px solid blue;
-    padding: 5px;
+    padding: 10px 50px;
   }
   button {
     background: transparent;
