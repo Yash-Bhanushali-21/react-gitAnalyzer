@@ -1,4 +1,4 @@
-## React-Git-Analyzer
+## Git User Inspector
   A Simple- React-Application designed to analyze various aspects and features of a github profile using github API along with Styled Components , React Icons & Router DOM.
 
 ## RoadMap
