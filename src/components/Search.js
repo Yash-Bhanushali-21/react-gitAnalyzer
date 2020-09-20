@@ -4,14 +4,27 @@ import { MdSearch } from "react-icons/md";
 import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = useState("");
+  //accessing requests sent from context.
+  const { requests, error, searchGithubUser } = React.useContext(GithubContext);
+
+  console.log(error);
+  console.log("hi");
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log(user);
+    if (user) {
+      //if user is set, searchUser using callback();
+      searchGithubUser(user);
+    }
   };
 
   return (
     <section className="section">
       <Wrapper className="section-center">
+        {error.show && (
+          <ErrorWrapper>
+            <p>{error.msg}</p>
+          </ErrorWrapper>
+        )}
         <form onSubmit={handleSearch}>
           <div className="form-control">
             <MdSearch />
@@ -21,10 +34,11 @@ const Search = () => {
               value={user}
               onChange={(e) => setUser(e.target.value)}
             ></input>
-            <button type="submit">Search</button>
+            {/*if requessts > 0 only then show submit button. */}
+            {requests > 0 && <button type="submit">Search</button>}
           </div>
         </form>
-        <h3>Requests: 40/60</h3>
+        <h3>Requests: {requests}/60</h3>
       </Wrapper>
     </section>
   );
@@ -62,11 +76,12 @@ const Wrapper = styled.div`
       letter-spacing: var(--spacing);
     }
     button {
+      border-radius: 5px;
       border-color: transparent;
       padding: 0.25rem 0.5rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
-      background: var(--clr-primary-4);
+      background: var(--clr-primary-5);
       color: var(--clr-white);
       transition: var(--transition);
       cursor: pointer;
