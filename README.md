@@ -131,6 +131,6 @@ package.json
 </a>
 
 ## Code Author
-<h3>Yash Bhanushali</h3>
+<h3>Yash Bhanushaali</h3>
 <a href="https://github.com/yash11213018"><img src="https://github.com/dhyey-shah/react-website-builder/blob/master/contributors/dev1.png" width="100px" height="100px" />
 </a>
