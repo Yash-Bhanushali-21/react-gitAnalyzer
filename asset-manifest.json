@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gitAnalyzer/static/css/main.b854109b.chunk.css",
-    "main.js": "/react-gitAnalyzer/static/js/main.e0ba908a.chunk.js",
-    "main.js.map": "/react-gitAnalyzer/static/js/main.e0ba908a.chunk.js.map",
-    "runtime-main.js": "/react-gitAnalyzer/static/js/runtime-main.c12867ca.js",
-    "runtime-main.js.map": "/react-gitAnalyzer/static/js/runtime-main.c12867ca.js.map",
-    "static/js/2.b43f723b.chunk.js": "/react-gitAnalyzer/static/js/2.b43f723b.chunk.js",
-    "static/js/2.b43f723b.chunk.js.map": "/react-gitAnalyzer/static/js/2.b43f723b.chunk.js.map",
-    "index.html": "/react-gitAnalyzer/index.html",
-    "precache-manifest.a21cb6f156368d47054746bca37c0673.js": "/react-gitAnalyzer/precache-manifest.a21cb6f156368d47054746bca37c0673.js",
-    "service-worker.js": "/react-gitAnalyzer/service-worker.js",
-    "static/css/main.b854109b.chunk.css.map": "/react-gitAnalyzer/static/css/main.b854109b.chunk.css.map",
-    "static/js/2.b43f723b.chunk.js.LICENSE.txt": "/react-gitAnalyzer/static/js/2.b43f723b.chunk.js.LICENSE.txt",
-    "static/media/login-img.svg": "/react-gitAnalyzer/static/media/login-img.20a90984.svg"
+    "main.css": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/css/main.b854109b.chunk.css",
+    "main.js": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/main.f6b3d544.chunk.js",
+    "main.js.map": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/main.f6b3d544.chunk.js.map",
+    "runtime-main.js": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/runtime-main.938b15f4.js",
+    "runtime-main.js.map": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/runtime-main.938b15f4.js.map",
+    "static/js/2.cd27eb08.chunk.js": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/2.cd27eb08.chunk.js",
+    "static/js/2.cd27eb08.chunk.js.map": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/2.cd27eb08.chunk.js.map",
+    "index.html": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/index.html",
+    "precache-manifest.9220d77da113fe2d2f3812205801650e.js": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/precache-manifest.9220d77da113fe2d2f3812205801650e.js",
+    "service-worker.js": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/service-worker.js",
+    "static/css/main.b854109b.chunk.css.map": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/css/main.b854109b.chunk.css.map",
+    "static/js/2.cd27eb08.chunk.js.LICENSE.txt": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/js/2.cd27eb08.chunk.js.LICENSE.txt",
+    "static/media/login-img.svg": "https://yash-bhanushali-21.github.io/react-gitAnalyzer/static/media/login-img.20a90984.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c12867ca.js",
-    "static/js/2.b43f723b.chunk.js",
+    "static/js/runtime-main.938b15f4.js",
+    "static/js/2.cd27eb08.chunk.js",
     "static/css/main.b854109b.chunk.css",
-    "static/js/main.e0ba908a.chunk.js"
+    "static/js/main.f6b3d544.chunk.js"
   ]
 }
