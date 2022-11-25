@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://yash-bhanushali-21.github.io/react-gitAnalyzer&&react-scripts build",
+    "build": "set PUBLIC_URL=https://yash-bhanushali-21.github.io/&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
